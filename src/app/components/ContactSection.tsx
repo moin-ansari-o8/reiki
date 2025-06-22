@@ -20,7 +20,7 @@ export default function ContactSection() {
   };
 
   return (
-    <main className="bg-gradient-to-br from-[#F8F3FF] to-[#EAE2F8] min-h-screen py-16">
+    <main className="py-16">
       <section className="container mx-auto px-4">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
