@@ -1,4 +1,5 @@
 import "./globals.css";
+import AppShell from "./components/AppShell";
 import { Playfair_Display, Manrope, Poppins } from "next/font/google";
 
 const playfair = Playfair_Display({
@@ -75,19 +76,6 @@ export const metadata = {
   metadataBase: new URL("https://www.reikihealing.com"),
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html
-      lang="en"
-      className={`${manrope.variable} ${playfair.variable} ${poppins.variable}`}
-    >
-      <body className="bg-gradient-to-br from-[#F8F3FF] to-[#EAE2F8] min-h-screen text-[#333333] font-sans">
-        {children}
-      </body>
-    </html>
-  );
+export default function HomePage() {
+  return <AppShell />;
 }
