@@ -25,16 +25,53 @@ export const metadata = {
   title: "Reiki Healing - Transform Your Life",
   description:
     "Join our Reiki Healing webinar and start your journey towards transformation.",
+  keywords: [
+    "Reiki Healing",
+    "Reiki Webinar",
+    "Spiritual Healing",
+    "Energy Healing",
+    "Holistic Wellness",
+    "Reiki Course",
+    "Healing Workshop",
+    "Register Reiki",
+    "Reiki Certificate",
+  ],
   icons: {
     icon: [
       {
         url: "/reiki_logo.jpeg",
         type: "image/jpeg",
         sizes: "any",
-        // The following property is not standard, but you can use a circular image file.
-        // For a circular favicon, use a circular image or SVG.
       },
     ],
+  },
+  openGraph: {
+    title: "Reiki Healing - Transform Your Life",
+    description:
+      "Join our Reiki Healing webinar and start your journey towards transformation.",
+    url: "https://www.reikihealing.com/",
+    siteName: "Reiki Healing",
+    images: [
+      {
+        url: "/reiki_logo.jpeg",
+        width: 800,
+        height: 600,
+        alt: "Reiki Healing Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reiki Healing - Transform Your Life",
+    description:
+      "Join our Reiki Healing webinar and start your journey towards transformation.",
+    images: ["/reiki_logo.jpeg"],
+    creator: "@yourtwitterhandle",
+  },
+  alternates: {
+    canonical: "https://www.reikihealing.com/",
   },
 };
 

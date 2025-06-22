@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { NextSeo } from "next-seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -65,24 +64,6 @@ export default function AppShell() {
 
   return (
     <>
-      <NextSeo
-        title="Reiki Healing - Transform Your Life"
-        description="Join our Reiki Healing webinar and start your journey towards transformation."
-        openGraph={{
-          url: "https://www.reikihealing.com",
-          title: "Reiki Healing - Transform Your Life",
-          description:
-            "Join our Reiki Healing webinar and start your journey towards transformation.",
-          images: [
-            {
-              url: "public\\reiki_logo.jpeg",
-              width: 800,
-              height: 600,
-              alt: "Reiki Healing Logo",
-            },
-          ],
-        }}
-      />
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
       <div className="bg-gradient-to-br from-[#E8DAF8] to-[#F3EAFD]  z-0">
         <main className="flex-1 w-full">
