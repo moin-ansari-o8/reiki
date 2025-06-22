@@ -6,7 +6,7 @@ export default function TestimonialsPage() {
     <>
       <NextSeo
         title="Testimonials - Reiki Healing"
-        description="Hear from those who’ve experienced the power of Reiki Healing."
+        description="Hear from those who've experienced the power of Reiki Healing."
       />
       <main>
         <Testimonials />
