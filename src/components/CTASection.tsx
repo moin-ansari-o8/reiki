@@ -1,5 +1,6 @@
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+"use client";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const CTASection = () => {
   return (
