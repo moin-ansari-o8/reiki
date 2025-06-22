@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/reiki_logo.jpeg";
 
 const navLinks = [
   { id: "home", label: "Home" },
@@ -13,8 +12,7 @@ const navLinks = [
   { id: "learning", label: "Learning" },
   { id: "certificate", label: "Certificate" },
   { id: "testimonials", label: "Testimonials" },
-  // { id: "register", label: "Register" },
-  // { id: "contact", label: "Contact" },
+  { id: "contact", label: "Contact" },
 ];
 
 interface NavbarProps {
@@ -31,11 +29,11 @@ const Navbar = ({ activeSection, scrollToSection }: NavbarProps) => {
         {/* Logo & Title */}
         <div className="flex items-center gap-3">
           <Image
-            src={logo}
+            src="/reiki_logo.jpeg"
             alt="Reiki Healing Logo"
-            width={40}
-            height={40}
-            className="rounded-full border-2 border-violet-300 shadow-md"
+            width={48}
+            height={48}
+            className="h-12 w-12 object-contain rounded-full shadow-md border-2 border-[#E0D1EA] bg-white"
           />
           <Link
             href="/"

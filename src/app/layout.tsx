@@ -1,5 +1,5 @@
 import "./globals.css";
-import AppShell from "@/components/AppShell";
+import AppShell from "./components/AppShell";
 import { Playfair_Display, Manrope, Poppins } from "next/font/google";
 
 const playfair = Playfair_Display({
@@ -73,6 +73,7 @@ export const metadata = {
   alternates: {
     canonical: "https://www.reikihealing.com/",
   },
+  metadataBase: new URL("https://www.reikihealing.com"),
 };
 
 export default function RootLayout() {

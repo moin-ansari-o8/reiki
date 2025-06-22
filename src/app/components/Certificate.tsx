@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { FaCertificate } from "react-icons/fa";
-import certificateImg from "@/assets/reiki_certi.jpeg";
 
 const Certificate = () => {
   return (
@@ -12,8 +11,10 @@ const Certificate = () => {
         <div className="flex justify-center">
           <div className="w-full max-w-md rounded-xl overflow-hidden shadow-lg border-[5px] border-yellow-400">
             <Image
-              src={certificateImg}
+              src="/reiki_certi.jpeg"
               alt="Yog Trainer Certificate"
+              width={600}
+              height={424}
               className="w-full h-auto object-cover"
             />
           </div>

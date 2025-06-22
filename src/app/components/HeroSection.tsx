@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import logo_motto from "@/assets/reiki_logo_with_motto.jpeg";
 
 const HeroSection = () => {
   return (
@@ -53,10 +52,12 @@ const HeroSection = () => {
         >
           <div className="relative mb-8 w-[300px] h-[260px] md:w-[440px] md:h-[470px] rounded-4xl overflow-hidden shadow-2xl transition-all duration-500 hover:scale-105 border-[5px] border-yellow-400">
             <Image
-              src={logo_motto}
-              alt="Peaceful Reiki Healing"
-              fill
-              className="object-cover rounded-3xl"
+              src="/reiki_logo_with_motto.jpeg"
+              alt="Reiki Healing Logo With Motto"
+              width={800}
+              height={800}
+              className="mx-auto w-full h-full object-cover drop-shadow-xl"
+              priority
             />
           </div>
         </motion.div>

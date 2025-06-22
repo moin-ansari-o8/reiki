@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaInstagram, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import Logo from "@/assets/reiki_logo.jpeg";
 
 interface FooterProps {
   scrollToSection: (id: string) => void;
@@ -16,11 +15,11 @@ const Footer = ({ scrollToSection }: FooterProps) => {
         {/* Logo &amp; Message - Centered */}
         <div className="flex flex-col items-center text-center">
           <Image
-            src={Logo}
-            alt="Reiki Logo"
-            width={120}
-            height={120}
-            className="rounded-full object-cover"
+            src="/reiki_logo.jpeg"
+            alt="Reiki Healing Logo"
+            width={200}
+            height={200}
+            className="h-36 w-36 object-contain rounded-full shadow-md border-2 border-[#E0D1EA] bg-white"
           />
           <p className="mt-4 text-sm text-white/90 max-w-xs">
             <span className="italic font-[var(--font-serif)]">
