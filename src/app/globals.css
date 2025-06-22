@@ -1,26 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 @import "tailwindcss";
 
+body {
+  font-family: 'Funnel Display', sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f3ff;
+  --foreground: #2d2a3c;
+  --gold: #ffd700;
+  --red: #e11d48;
+  --violet: #6d28d9;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Manrope', sans-serif;
+  --font-funnel: 'Funnel Display', sans-serif;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-funnel {
+  font-family: var(--font-funnel);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Funnel Display', sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-heading {
+  font-family: var(--font-sans);
+}
+
+/* Transition Helpers */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+/* Golden Pulse Glow */
+@keyframes golden-pulse {
+  0% {
+    box-shadow: 0 0 8px #ffd70033, 0 0 12px #ffd70066;
+  }
+  50% {
+    box-shadow: 0 0 18px #ffd70088, 0 0 32px #ffd700aa;
+  }
+  100% {
+    box-shadow: 0 0 8px #ffd70033, 0 0 12px #ffd70066;
+  }
+}
+
+@keyframes sparkle-float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-6px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+}
+
+.stat-glow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  border: 2px solid #FFD700;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #5E3A87;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffd70050, 0 0 20px #ffd70050;
+  animation: golden-pulse 3s ease-in-out infinite;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Twinkling sparkle effect */
+.stat-glow::after {
+  content: "✨";
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  font-size: 1rem;
+  color: #FFD700;
+  opacity: 0.7;
+  animation: sparkle-float 2.5s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+.stat-glow:hover {
+  box-shadow: 0 0 20px #ffd70088, 0 0 40px #ffd700aa;
+  animation: golden-pulse 1.5s ease-in-out infinite;
+}
+.stat-glow:hover::after {
+  animation: sparkle-float 1.5s infinite ease-in-out;
+  opacity: 1;
 }
