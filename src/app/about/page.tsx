@@ -24,7 +24,7 @@ export default function AboutPage() {
               priority
             />
           </div>
-          <h3 className="mt-4 text-xl md:text-2xl font-semibold text-[#5E3A87] font-[var(--font-poppins)]">
+          <h3 className="mt-4 text-xl md:text-2xl text-[#5E3A87] font-[var(--font-poppins)]">
             Pragna Patel
           </h3>
         </motion.div>
@@ -37,11 +37,11 @@ export default function AboutPage() {
           viewport={{ once: true }}
           className="text-center md:text-left"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-[#5E3A87] font-[var(--font-serif)] mb-4 leading-tight">
+          <h2 className="text-4xl md:text-6xl text-[#5E3A87] font-[var(--font-serif)] mb-4 leading-tight">
             Meet Your Guide to Inner Peace
           </h2>
           <p className="text-[#333] text-lg leading-relaxed mb-6 font-[var(--font-sans)]">
-            I’m Pragna Patel, a Certified Reiki Healer with 21+ years of
+            I am Pragna Patel, a Certified Reiki Healer with 21+ years of
             experience guiding over 3000 souls toward inner harmony. Through
             personal sessions, group healing, and transformative workshops, I
             channel the power of Reiki to unlock your mind, heal your body, and
@@ -49,8 +49,8 @@ export default function AboutPage() {
           </p>
           <p className="text-[#333] text-lg leading-relaxed mb-8 font-[var(--font-sans)]">
             My mission is simple — to help you reconnect with your true self,
-            remove emotional & energetic blocks, and awaken a life filled with
-            joy and light.
+            remove emotional &amp; energetic blocks, and awaken a life filled
+            with joy and light.
           </p>
 
           {/* Stats */}

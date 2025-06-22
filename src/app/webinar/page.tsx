@@ -5,6 +5,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { BsCalendar } from "react-icons/bs";
 import { FaHeart } from "react-icons/fa";
+import { Variants } from "framer-motion";
 const webinarDetails = [
   { label: "Dates", value: "June 20, 21 & 22, 2025" },
   { label: "Time", value: "8:30 PM – 10:30 PM (IST)" },
@@ -87,12 +88,16 @@ export default function Webinar() {
     }
   }, [controls, isInView]);
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
-    visible: (i: number) => ({
+    visible: (i: number = 1) => ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, delay: i * 0.3, ease: "easeOut" },
+      transition: {
+        duration: 0.6,
+        delay: i * 0.3,
+        ease: "easeOut",
+      },
     }),
   };
 
@@ -217,10 +222,10 @@ export default function Webinar() {
             >
               Join our transformative 3-day Reiki Healing Webinar an immersive
               energy experience designed for anyone seeking balance, clarity,
-              and healing. Whether you're feeling drained, stuck, or curious
-              about spiritual wellness, this live event is your gateway to
-              self-empowerment. Led by a certified Reiki Master with over 21
-              years of experience, you’ll be guided through healing practices,
+              and healing. Whether you&apos;re feeling drained, stuck, or
+              curious about spiritual wellness, this live event is your gateway
+              to self-empowerment. Led by a certified Reiki Master with over 21
+              years of experience, you will be guided through healing practices,
               energetic insights, and calming meditations that activate your
               inner power and restore harmony.
             </motion.p>

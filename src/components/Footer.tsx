@@ -13,7 +13,7 @@ const Footer = ({ scrollToSection }: FooterProps) => {
   return (
     <footer className="bg-[#5A348F]/90 backdrop-blur-xl text-white pt-10 pb-6 font-[var(--font-poppins)]">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {/* Logo & Message - Centered */}
+        {/* Logo &amp; Message - Centered */}
         <div className="flex flex-col items-center text-center">
           <Image
             src={Logo}
@@ -28,18 +28,16 @@ const Footer = ({ scrollToSection }: FooterProps) => {
             </span>
           </p>
           <ul className="mt-4 space-y-1 text-sm text-white/80 list-disc pl-5 text-left">
-            <li>Reduce stress & anxiety</li>
+            <li>Reduce stress &amp; anxiety</li>
             <li>Improve sleep</li>
             <li>Minimize body pain</li>
-            <li>Increase happiness & peace</li>
+            <li>Increase happiness &amp; peace</li>
           </ul>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold font-[var(--font-serif)] mb-4">
-            Quick Links
-          </h3>
+          <h3 className="text-lg font-[var(--font-serif)] mb-4">Quick Links</h3>
           <ul className="space-y-2">
             {[
               "home",

@@ -111,9 +111,9 @@ const Testimonials = () => {
                     transition={{ duration: 0.5, delay: index * 0.15 }}
                   >
                     <p className="text-[#333] italic mb-3 text-sm sm:text-base leading-snug">
-                      "{item.text}"
+                      &quot;{item.text}&quot;
                     </p>
-                    <p className="text-[#5E3A87] font-semibold font-[var(--font-poppins)] text-right text-sm">
+                    <p className="text-[#5E3A87]  font-[var(--font-poppins)] text-right text-sm">
                       ~ {item.name}
                     </p>
                   </motion.div>
@@ -132,9 +132,9 @@ const Testimonials = () => {
                   transition={{ duration: 0.5, delay: index * 0.15 }}
                 >
                   <p className="text-[#333] italic mb-3 text-sm sm:text-base leading-snug">
-                    "{item.text}"
+                    &quot;{item.text}&quot;
                   </p>
-                  <p className="text-[#5E3A87] font-semibold font-[var(--font-poppins)] text-right text-sm">
+                  <p className="text-[#5E3A87] font-[var(--font-poppins)] text-right text-sm">
                     ~ {item.name}
                   </p>
                 </motion.div>

@@ -51,9 +51,9 @@ const Certificate = () => {
             accountability.
             <br />
             <br />
-            When you choose us, you're not just joining a session — you're
-            stepping into a space shaped by certified healing, discipline, and
-            heart-led transformation.
+            When you choose us, you&apos;re not just joining a session,
+            you&apos;re stepping into a space shaped by certified healing,
+            discipline, and heart-led transformation.
           </p>
         </div>
       </div>

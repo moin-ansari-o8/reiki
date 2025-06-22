@@ -18,7 +18,7 @@ const learnItems = [
   {
     icon: <FaLeaf className="text-[#5E3A87] text-3xl mb-4" />,
     title: "What is Reiki?",
-    desc: "Understand the ancient Japanese technique of energy healing that restores balance, reduces stress, and empowers the body’s natural ability to heal.",
+    desc: "Understand the ancient Japanese technique of energy healing that restores balance, reduces stress, and empowers the body&apos;s natural ability to heal.",
   },
   {
     icon: <FaBookOpen className="text-[#5E3A87] text-3xl mb-4" />,
@@ -43,17 +43,17 @@ const learnItems = [
   {
     icon: <FaExclamationTriangle className="text-[#5E3A87] text-3xl mb-4" />,
     title: "Are There Any Risks?",
-    desc: "Understand Reiki’s gentle nature, safety guidelines, and how it complements modern therapies.",
+    desc: "Understand Reiki&apos;s gentle nature, safety guidelines, and how it complements modern therapies.",
   },
   {
     icon: <FaUserFriends className="text-[#5E3A87] text-3xl mb-4" />,
     title: "Who Can Learn Reiki?",
-    desc: "Whether you’re a student, parent, entrepreneur, or elder  Reiki is for everyone, no matter your background.",
+    desc: "Whether you&apos;re a student, parent, entrepreneur, or elder  Reiki is for everyone, no matter your background.",
   },
   {
     icon: <FaPrayingHands className="text-[#5E3A87] text-3xl mb-4" />,
     title: "Medical or Religious Prerequisites",
-    desc: "You don’t need to be spiritual or religious. Reiki transcends beliefs and enhances wellness.",
+    desc: "You don&apos;t need to be spiritual or religious. Reiki transcends beliefs and enhances wellness.",
   },
   {
     icon: <FaCoins className="text-[#5E3A87] text-3xl mb-4" />,
@@ -72,8 +72,8 @@ const WhatYoullLearn = () => {
       className="py-0 pb-0 bg-transparent font-[var(--font-poppins)]"
     >
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#5E3A87] font-[var(--font-serif)] text-center mb-12">
-          What You’ll Learn
+        <h2 className="text-4xl sm:text-5xl  text-[#5E3A87] font-[var(--font-serif)] text-center mb-12">
+          What You&apos;ll Learn
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {learnItems.map((item, index) => (
@@ -86,7 +86,7 @@ const WhatYoullLearn = () => {
             >
               <div className="flex flex-col items-start">
                 {item.icon}
-                <h3 className="text-xl font-bold text-[#5E3A87] mb-2 font-[var(--font-poppins)]">
+                <h3 className="text-xl  text-[#5E3A87] mb-2 font-[var(--font-poppins)]">
                   {item.title}
                 </h3>
                 <p className="text-[#333333] text-sm leading-relaxed font-[var(--font-poppins)]">
