@@ -6,15 +6,10 @@ import { NextSeo } from "next-seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import WhatYoullLearn from "@/components/WhatYoullLearn";
-import Testimonials from "@/components/Testimonials";
-import CTASection from "@/components/CTASection";
 import AboutPage from "@/app/about/page";
 import WebinarPage from "@/app/webinar/page";
 import LearningPage from "@/app/learning/page";
 import TestimonialsPage from "@/app/testimonials/page";
-import RegisterPage from "@/app/register/page";
-import ContactPage from "@/app/contact/page";
 import Certificate from "@/components/Certificate";
 
 const navLinks = [
@@ -34,7 +29,6 @@ export default function AppShell() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
       let closestSection = "home";
       let minDistance = Infinity;
 

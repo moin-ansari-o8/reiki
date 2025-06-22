@@ -1,6 +1,4 @@
 import { NextSeo } from "next-seo";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import WhatYoullLearn from "@/components/WhatYoullLearn";
 
 export default function Learning() {

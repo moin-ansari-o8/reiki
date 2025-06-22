@@ -21,10 +21,15 @@ const Certificate = () => {
 
         {/* Certificate Content */}
         <div className="text-gray-800">
-          <h2 className="text-3xl sm:text-4xl font-bold font-[var(--font-serif)] text-[#5A348F] mb-6 flex items-center gap-3">
+          <h2 className="text-3xl sm:text-4xl font-[var(--font-serif)] text-[#5A348F] mb-6 flex items-center gap-3">
             <FaCertificate className="text-[#5A348F]" />
             Certificate of Training
           </h2>
+
+          <p className="mb-4 text-lg sm:text-xl">
+            Receive a beautiful, personalized certificate after completing the
+            course. It&apos;s a symbol of your journey and achievement!
+          </p>
 
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
             Certified. Experienced. Trusted.

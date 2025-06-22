@@ -3,8 +3,6 @@
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 type FormData = {
   name: string;

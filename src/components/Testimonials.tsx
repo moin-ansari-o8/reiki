@@ -22,10 +22,6 @@ const testimonials = [
     text: "Peace, energy, and confidence – all came together.",
   },
   {
-    name: "Moin Patel",
-    text: "I feel lighter and more positive after every session.",
-  },
-  {
     name: "Rina Shah",
     text: "The healing sessions brought clarity and calm to my life.",
   },
@@ -186,7 +182,7 @@ const Testimonials = () => {
                       }}
                     >
                       <p className="text-[#333] italic mb-3 text-base leading-snug">
-                        "{card.text}"
+                        &quot;{card.text}&quot;
                       </p>
                       <p className="text-[#5E3A87] font-semibold font-[var(--font-poppins)] text-right text-sm">
                         ~ {card.name}

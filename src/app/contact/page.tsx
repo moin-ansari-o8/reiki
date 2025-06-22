@@ -1,10 +1,8 @@
-'use client';
+"use client";
 
-import { NextSeo } from 'next-seo';
-import { motion } from 'framer-motion';
-import { useForm } from 'react-hook-form';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import { NextSeo } from "next-seo";
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
 
 type FormData = {
   name: string;
@@ -13,11 +11,15 @@ type FormData = {
 };
 
 export default function Contact() {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
     console.log(data); // Handle form submission (e.g., API call)
-    alert('Message sent successfully!');
+    alert("Message sent successfully!");
   };
 
   return (
@@ -44,38 +46,62 @@ export default function Contact() {
             className="max-w-md mx-auto space-y-6"
           >
             <div>
-              <label className="block text-sm uppercase text-[#9473C0] mb-2" htmlFor="name">
+              <label
+                className="block text-sm uppercase text-[#9473C0] mb-2"
+                htmlFor="name"
+              >
                 Name
               </label>
               <input
                 id="name"
-                {...register('name', { required: 'Name is required' })}
+                {...register("name", { required: "Name is required" })}
                 className="w-full p-3 bg-[#F1F1F1] rounded-xl border border-[#E0D1EA] focus:border-[#5E3A87] focus:outline-none"
               />
-              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.name.message}
+                </p>
+              )}
             </div>
             <div>
-              <label className="block text-sm uppercase text-[#9473C0] mb-2" htmlFor="email">
+              <label
+                className="block text-sm uppercase text-[#9473C0] mb-2"
+                htmlFor="email"
+              >
                 Email
               </label>
               <input
                 id="email"
                 type="email"
-                {...register('email', { required: 'Email is required', pattern: { value: /^\S+@\S+$/i, message: 'Invalid email' } })}
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: { value: /^\S+@\S+$/i, message: "Invalid email" },
+                })}
                 className="w-full p-3 bg-[#F1F1F1] rounded-xl border border-[#E0D1EA] focus:border-[#5E3A87] focus:outline-none"
               />
-              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
             <div>
-              <label className="block text-sm uppercase text-[#9473C0] mb-2" htmlFor="message">
+              <label
+                className="block text-sm uppercase text-[#9473C0] mb-2"
+                htmlFor="message"
+              >
                 Message
               </label>
               <textarea
                 id="message"
-                {...register('message', { required: 'Message is required' })}
+                {...register("message", { required: "Message is required" })}
                 className="w-full p-3 bg-[#F1F1F1] rounded-xl border border-[#E0D1EA] focus:border-[#5E3A87] focus:outline-none h-32"
               />
-              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
+              {errors.message && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.message.message}
+                </p>
+              )}
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}

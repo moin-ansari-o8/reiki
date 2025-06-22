@@ -2,10 +2,8 @@
 
 import { NextSeo } from "next-seo";
 import { motion, useInView, useAnimation } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { BsCalendar } from "react-icons/bs";
-import { FiStar } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
 const webinarDetails = [
   { label: "Dates", value: "June 20, 21 & 22, 2025" },
@@ -178,7 +176,7 @@ export default function Webinar() {
                 initial={{ opacity: 0, y: -40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className="text-3xl sm:text-5xl md:text-6xl font-bold text-[#5E3A87] font-[var(--font-serif)] mb-4"
+                className="text-3xl sm:text-5xl md:text-6xl font-[var(--font-serif)] text-[#5E3A87] mb-4"
               >
                 Experience the Power of Reiki
                 <br className="hidden sm:block" />
@@ -240,7 +238,7 @@ export default function Webinar() {
                 }}
                 className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-md border border-[#E0D1EA]/50"
               >
-                <h3 className="text-lg sm:text-xl font-bold text-[#5E3A87] font-[var(--font-poppins)] mb-4 flex items-center justify-center">
+                <h3 className="text-lg sm:text-xl font-[var(--font-poppins)] text-[#5E3A87] mb-4 flex items-center justify-center">
                   <BsCalendar className="mr-2 text-xl" /> Webinar Details
                 </h3>
                 <ul className="text-[#333333] space-y-2 text-left text-sm sm:text-base">
@@ -263,7 +261,7 @@ export default function Webinar() {
                 }}
                 className="bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-md border border-[#E0D1EA]/50"
               >
-                <h3 className="text-lg sm:text-xl font-bold text-[#5E3A87] font-[var(--font-poppins)] mb-4 flex items-center justify-center">
+                <h3 className="text-lg sm:text-xl font-[var(--font-poppins)] text-[#5E3A87] mb-4 flex items-center justify-center">
                   <FaHeart className="mr-2 text-xl" /> Who This Is For
                 </h3>
                 <ul className="text-[#333333] list-disc pl-5 space-y-2 text-left text-sm sm:text-base">
